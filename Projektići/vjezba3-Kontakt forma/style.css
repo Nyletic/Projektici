@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merienda One", cursive;
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./pozadina.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .input-group {
+  flex-basis: 48%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 0;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.75rem;
+}
+
+/* .submit {
+  width: 6rem;
+} */
+
+/* #message {
+  width: 30rem;
+} */

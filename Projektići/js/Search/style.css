@@ -1,0 +1,20 @@
+input {
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.hide {
+  display: none;
+}

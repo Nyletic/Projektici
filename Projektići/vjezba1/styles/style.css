@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/reinaldo-garanito-IhWX0iZIbTc-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigacija li,
+.container a {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 1.5rem;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.navigacija li:hover,
+.container a:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navigacija a,
+.container a {
+  color: black;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

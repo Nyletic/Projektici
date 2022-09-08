@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c5c9aaac06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Saira:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form action="post">
+        <div class="row">
+          <div class="input-group">
+            <input type="text" name="ime" id="ime" required />
+            <label for="ime"><i class="fa-solid fa-user"></i> Ime</label>
+          </div>
+          <div class="input-group">
+            <input type="text" name="broj" id="broj" required />
+            <label for="broj"
+              ><i class="fa-solid fa-square-phone"></i> Broj</label
+            >
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" id="email" required />
+          <label for="email"><i class="fa-solid fa-envelope"></i> E-mail</label>
+        </div>
+        <div class="input-group">
+          <textarea name="message" id="message" rows="8" required></textarea>
+          <label for="message"
+            ><i class="fa-solid fa-comments"></i>Poruka</label
+          >
+        </div>
+        <button class="submit">
+          Posalji <i class="fa-solid fa-eject"></i>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

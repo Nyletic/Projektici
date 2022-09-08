@@ -1,0 +1,62 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./ismi-fitri-hodijah-wdvO_ipOhWs-unsplash.jpg") no-repeat center center/cover fixed;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+.wrapper div {
+  border: 3px solid white;
+  flex-basis: 20%;
+  text-align: center;
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  padding: 5%;
+  position: relative;
+  top: -80vh;
+}
+.wrapper div:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: spuštanje 3s linear 1s forwards;
+          animation: spuštanje 3s linear 1s forwards;
+}
+.wrapper div:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.7);
+  -webkit-animation: spuštanje 3s linear 3s forwards;
+          animation: spuštanje 3s linear 3s forwards;
+}
+.wrapper div:nth-child(3) {
+  background-color: rgba(255, 154, 0, 0.7);
+  -webkit-animation: spuštanje 3s linear 4.5s forwards;
+          animation: spuštanje 3s linear 4.5s forwards;
+}
+
+@-webkit-keyframes spuštanje {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes spuštanje {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

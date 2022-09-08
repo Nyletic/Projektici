@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image-slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image fade">
+        <img src="Lam0.jpeg" />
+      </div>
+      <div class="image fade">
+        <img src="Lam1.jpeg" />
+      </div>
+      <div class="image fade">
+        <img src="Lam2.jpeg" />
+      </div>
+      <div class="image fade">
+        <img src="Lam3.jpeg" />
+      </div>
+      <div class="image fade">
+        <img src="Lam4.jpeg" />
+      </div>
+      <div class="image fade">
+        <img src="Lam5.jpeg" />
+      </div>
+
+      <a id="prev" onclick="show_slide(-1)">&#10094</a></a>
+      <a id="next" onclick="show_slide(1)">&#10095</a></a>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

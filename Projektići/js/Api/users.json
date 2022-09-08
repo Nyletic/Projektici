@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "ime": "Mihael",
+        "prezime": "Mihić"
+    },
+    {
+        "id": 2,
+        "ime": "Darko",
+        "prezime": "Darkić"
+    },
+    {
+        "id": 3,
+        "ime": "Mirko",
+        "prezime": "Mirić"
+    }
+]

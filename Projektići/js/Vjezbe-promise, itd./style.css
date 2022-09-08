@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.user {
+  background: conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite);
+  padding: 3rem;
+  margin: 3rem;
+}

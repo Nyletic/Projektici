@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c5c9aaac06.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="giphy loader.gif" alt="loading..." />
+    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <h1><i class="fa-solid fa-camera"></i> Unsplash API</h1>
+          <div class="search-box">
+            <input type="text" id="input" placeholder="Pretraži.." />
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div id="grid"></div>
+      </div>
+    </section>
+  </body>
+</html>

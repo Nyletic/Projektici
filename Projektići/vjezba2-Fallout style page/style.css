@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Saira", sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  background: linear-gradient(
+      to top right,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(./milad-fakurian-7NiD4uMoo24-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.navigacija li {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0 12px;
+}
+
+.navigacija a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.navigacija a:hover {
+  color: #ffe6df;
+}
+
+.search_input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid tomato;
+}
+
+/* .search {
+} */
+
+.btn {
+  background: tomato;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  padding-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+input::placeholder {
+  color: rgba(100, 100, 100, 0.7);
+  padding-left: 10px;
+}
+
+input {
+  color: rgba(100, 100, 100, 0.7);
+}
+
+h1,
+h1 span {
+  font-size: 3rem;
+  font-family: "Marienda One", cursive;
+}
+
+h1 span {
+  color: tomato;
+}
+
+h2 {
+  color: tomato;
+}
+
+main {
+  display: flex;
+  margin: 2rem;
+}
+
+section,
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+aside h2 {
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+aside input {
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid tomato;
+  width: 15rem;
+  height: 2rem;
+  margin-top: 3rem;
+}
+
+aside p,
+aside a {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+aside a {
+  text-decoration: none;
+  color: tomato;
+}
+
+.btn_rezerviraj,
+.btn_login {
+  background: tomato;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.btn_login {
+  width: 40%;
+}
+
+.btn_rezerviraj:hover {
+  background: #fff;
+}
+
+.btn_login {
+  padding: 1rem;
+}
+
+.gumbic {
+  display: flex;
+  justify-content: center;
+}
