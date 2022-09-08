@@ -1,0 +1,208 @@
+:root {
+  --pozadina: #f4f4f4;
+}
+/* za zalijepiti footer na dno, html:100%, body: min-height:100%, display:flex; flex-direction:column; Footer: margin-top:auto;*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Saira", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: var(--pozadina);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.scrollbar {
+  padding-right: 17px;
+}
+
+header {
+  background: #35424a;
+  min-height: 4rem;
+  display: flex;
+  border-bottom: #e8491d 3px solid;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  width: 6rem;
+  padding-bottom: 0.7rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #ccc;
+  font-weight: bold;
+}
+
+.naranca {
+  color: #e8491d;
+}
+
+#showcase {
+  min-height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/showcase.jpg);
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  color: #fff;
+}
+
+h1,
+h1 span {
+  font-size: 4rem;
+}
+
+#newsletter {
+  background-color: #35424a;
+}
+
+#newsletter .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.btn1 {
+  background-color: #e8491d;
+  color: #fff;
+  border: 0;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newsletter input[type="email"] {
+  outline: none;
+  width: 15rem;
+}
+
+input[type="email"]::placeholder {
+  color: #000;
+}
+
+#boxes .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kutija {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.kutija > * {
+  text-align: center;
+}
+
+.kutija img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #e8491d;
+  padding: 2rem;
+  color: #fff;
+  margin-top: auto;
+}
+
+#main .container {
+  display: flex;
+  gap: 1rem;
+}
+
+article {
+  flex-basis: 70%;
+}
+
+aside {
+  display: flex;
+  flex-basis: 30%;
+  background-color: #35424a;
+  color: #fff;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.7em 0 3.2px;
+  padding: 1rem;
+}
+
+article h1 {
+  font-size: 3rem;
+}
+
+aside h2 {
+  font-size: 1.7rem;
+}
+article p {
+  padding-top: 1rem;
+}
+
+aside input,
+aside textarea {
+  width: 90%;
+  padding: 0.3rem;
+  margin: 0.4rem 0;
+}
+
+#kontakt li {
+  background: #e6e6e6;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  header .container,
+  #newsletter .container,
+  #boxes .container,
+  #main .container {
+    flex-direction: column;
+  }
+
+  #newsletter .container {
+    text-align: center;
+  }
+
+  #newsletter input[type="email"] {
+    width: 9rem;
+  }
+}

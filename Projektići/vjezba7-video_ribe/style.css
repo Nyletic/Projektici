@@ -1,0 +1,144 @@
+:root {
+  --crna: #202e3b;
+  --plava: #2b7db8;
+  --text-shadow: 0.1rem 0.1rem 0.3rem #333;
+  --box-shadow: 0.1rem 0.1rem 0.3rem #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: rgba(71, 118, 247, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: var(--text-shadow);
+}
+
+nav a:hover {
+  color: var(--plava);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+h1 {
+  font-size: 7rem;
+  color: var(--plava);
+}
+
+h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.btn {
+  background-color: var(--plava);
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--crna);
+  letter-spacing: 0.1rem;
+}
+
+.icons {
+  margin: 2rem;
+}
+
+.icons a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--plava);
+  background-color: #fff;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  margin: 0 0.5rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+}
+
+.video-container {
+  position: absolute;
+  z-index: -1;
+}
+
+video {
+  object-fit: cover;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 2.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  .fa-bars {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: var(--crna);
+  }
+}
