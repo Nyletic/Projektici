@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /*100% font size je 16px, znaci da je 90px = 562.5%, 1em je duzina slova m. 1em = 16px, postotak i em daju dynamic size, znaci
+  da se scala kako se scale-a i stranica dok kod px to nije slucaj. EM and % Font size gets inherited. If I set font-size in body and h1 with em it will take
+  values from both of them, this is also opposite for px. This is rem comes in, r stands for root and it ignores all other font applies if there are any.*/
+  /*line-height: 2; /*prefered way of specifying line height is with values without unit*/
+  margin: 50px auto 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  margin-top: 0;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-top-width: 8px;
+  border-top-color: #EAF6F6;
+  width: 4%;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+p{
+  color: #40514E;
+  line-height: 2;
+}
+
+.top-container {
+  background-color: #E4F6F6;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 25px;
+}
+
+.middle-container {}
+
+.bottom_container {}
+
+.emphasis {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 400px;
+  bottom: 300px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  /*text align ukljucuje i slike, ne samo tekst.*/
+  padding: 50px 0;
+}
+
+.videogame-image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.computer-image {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me-button {
+  margin-top: 50px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  height: 17px;
+  line-height: 17px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px;
+  background-color: #66BFBF;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.contact-me-button:hover {
+  border: solid #337FED 1px;
+  background: #66BFBF;
+  background-image: -webkit-linear-gradient(top, #66BFBF, #3D94F6);
+  background-image: -moz-linear-gradient(top, #66BFBF, #3D94F6);
+  background-image: -ms-linear-gradient(top, #66BFBF, #3D94F6);
+  background-image: -o-linear-gradient(top, #66BFBF, #3D94F6);
+  background-image: linear-gradient(to bottom, #66BFBF, #3D94F6);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.profile {
+  padding: 50px 0 100px;
+}
+
+.skills {
+  margin-top: 100px;
+}
+
+.outro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-me {
+  margin: 75px 0 0 0;
+  padding: 25px 0 50px;
+}
+
+.footer-link {
+  font-size: 17px;
+}
+
+#footer-signature {
+  color: #EAF6F6;
+  position: relative;
+  top: 25px;
+  font-size: 0.75rem;
+}
+
+#bottom_h3 {
+  margin-bottom: 50px;
+}
