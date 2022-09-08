@@ -1,0 +1,50 @@
+Kod orginalni mogu pronaci i na codepen-u
+https://codepen.io/bradtraversy/pen/gvMGyB?editors=1100
+
+Grid is best used for layout of site, boxes, areas,or ui and use flexbox to align things inside those elements
+
+main image for site https://image.ibb.co/kYJK8x/showcase.jpg //dodati cemo u cssu
+
+HTML
+-boilerplate code
+-GridBiz title
+-copy script element from font awesome into head above title
+(<script src="https://kit.fontawesome.com/c5c9aaac06.js" crossorigin="anonymous"></script>)
+-link stylesheet
+-right click in html document and press open with live server for local site in browser
+
+body
+-wrapper div for all of the content
+-navigation with main-nav class <nav></nav>
+-ul with 4 li with a waith href="#": Home, About, Services, Contact //empty link so they dont take me anywhere
+-section with class top-container, 
+    inside of it header with showcase class
+        h1 Your Web Presence, p lorem15, a href# with button class for "Read More"
+    div with 2 classes = top-box top-box-a
+        h4 Membership, p class"price" $199/mo , a button Buy now //isti kao i gornji readmore button
+    div with 2 classes just like the one above but with box-b
+    and with Pro Membership and $299/mo
+-section boxes //upisem section.boxes i stisnem tab(ili enter), emmet ce sam napraviti sve tabove i classu boxes
+                ili upisem .top-box.top-box-a i napraviti ce dvije class-e
+     each div inside is gonna have a class of box
+     prvi box ima chart ikonu koju pronadem na font awesome-u i kopiram kod izmedu div tagova 
+        //po defaultu su jako sitne ikone ali ih mogu povecati sa "fa-nx" gdje je n bilo koji broj, slika nije rastegnuta jer je vector graphics(svg) tako da uvijek dobro izgleda kolko god je uvecam
+        h3 Analytics ispod ikone
+        p lorem10
+    tako napraviti jos 3 puta da imam 4 boxa
+        2.box fa-globe, Marketing
+        3.box fa-cog, Development
+        4.box fa-users. Support
+
+- info section, stavljamo nasu sliku unutra
+    div with h2 "Your Business On The Web", p lorem30, a.btn "Learn More"
+
+- portfolio section //9 images from unsplash which is gonna generate random images for us
+    img with src="https://source.usplash.com/random/200x200"    //200x200 is size 
+    copy that 8 more times and change size so it is not the same image, so 201x200, 202x200...
+
+footer
+    p GridBiz &copy; 2020 //&copy valjda stavi onaj copywright znak, moram testirati
+
+
+

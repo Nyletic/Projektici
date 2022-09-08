@@ -1,0 +1,200 @@
+/* Css variables */
+/* ctrl + k + u ili ctrl + k + c - za brzo komentiranje oznacenog teksta */
+
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8); /*prvi value je za horizontal offset, drugi za vertical, 
+    treci za blue radius i cetvrti za red green blue alpha. Alpha je opacity.*/
+}
+
+html{
+    box-sizing: border-box; /*If we are using padding it doesn't affect the width of the element*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4; /*razmak izmedu linija teksta*/
+}
+
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0; 
+}
+
+img{
+    max-width: 100%; /*we want images to stay within their containers*/
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+
+.main-nav ul{ /*targetira ul u nav-u classe main-nav, znaci nije da targetira 2 elementa il tak nesto*/
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover{
+    background: var(--dark);
+    color: var(--light);
+}
+
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+}
+
+.showcase{
+    grid-area: showcase; /*we are assigning it here so that it knows what it is in grid-template-areas*/ 
+    min-height: 400px;
+    background: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; /*it will mvoe it down*/
+    box-shadow: var(--shadow);
+}
+
+.showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0; /* p and heading can come together*/
+    color: var(--light);
+}
+
+.showcase p{ /*only paragraphs inside showcase class*/
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+}
+
+.top-box{
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box .price{
+    font-size: 2.5rem;
+}
+
+.top-box-a{
+    grid-area: top-box-a;
+}
+
+.top-box-b{
+    grid-area: top-box-b;
+}
+
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*Instead of using repeat(4, 1fr) then use media queries to make it responsive we do it this way, so when it gets smaller it fits less boxes in the line*/
+
+}
+
+.box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.info{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+.portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img{
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+.footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries, we are gonna do 500px and 700px */
+
+@media(max-width: 700px){ /*anything we put in here is gonna be in effect for 700px or less*/
+    .top-container{
+        grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media(max-width: 500px){
+    .top-container{
+        grid-template-areas: 
+            'showcase'
+            'top-box-a'
+            'top-box-b';
+    }
+}

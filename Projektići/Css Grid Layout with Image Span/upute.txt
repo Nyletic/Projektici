@@ -1,0 +1,76 @@
+Cilj je napraviti stranicu s grid layoutom koja ima 2 slike kao pozadinu, imamo grid icone od kojih 
+svaka predstavlja nesto, a u pozadini tih ikona vide se dio jedne od dviju slika
+
+IMPORTANT!!
+- Shift + alt + F - formatiranje coda ili beautify
+
+-HTML
+boilerplate html
+Health panel ime title
+linkat stylesheet
+use font awesome for icons(odem na stranicu cdnjs i upisem u trazilicu: font_awsome, zatim 
+    odem na css tab i zatim stisnem "copy link tag" desno od linka i zalijepim u html kod iznad css 
+    linka). 
+napraviti div container u kojemu ce biti svi gridići(ostali divovi) i imati ce class name bg1 ili bg2
+    svaki div ce imati h2 i p
+    staviti iconu na mjesta h2 gdje je ikona umjesto teksta. Kako to radim? 
+    Odem na stranicu font awesome jer sam od nje preuzeo onaj css file(valjda je to zbog toga),
+    pronađem zeljenu ikonu i kopiram HTML u svoj kod na izmedu h2 tagova.
+
+-Css
+using roboto font - @import i zaljepim neki url;
+* - Css reset or so called wildcard- it is going to apply written styles to all elements
+* values{set box sizing to border box  - border-box property nam omogucava da utrpamo 
+                                        padding i border u sveukupnu velicinu(width, height) elementa. 
+                                        Ako je width 200px tu ce biti ukljuceni: content(width elementa), 
+                                        padding, borders
+    margin and padding 0}
+body - background #333 (pozadinska boja iza svega, cijelog page-a)
+    color white #fff - boja svih elemenata unutar body-ja u htmlu
+    font-family: Roboto, sans-serif  
+kreiranje grida
+    dodjeliti nasem glavnom kontenjeru grid display property - grid je nastavak na niz display property-ja static, relative, absolute, fixed
+    i dodati grid-columne koristeci repeat 1fr 4 - fractional unit je css grid value koji omogucuje da imamo gridove jednakih velicina bez koristenja % uz kalkulacije, znaci sam racuna koliko prostora ce zauzeti s obzirom na druge elemente i scalira se kako se scalira i stranica.
+    grid gap 10px
+
+.container > div - each direct div of the container
+    cursor: pointer //stavlja onu bijelu rucicu kao pokazivac
+    height 210px
+    background url(bg1) //vidjet ce se samo mali dio slike jednako u svakom grid elementu
+    background size: cover //da vidimo cijeli img u svakom grid elementu 
+    background attachment: fixed //it spans entire image across all elements
+
+    display: flex // this way we can center everything very easily
+    flex-direction column 
+    align-items: center // centrirat ce vodoravno
+    justify-content: center // centrirati vertikalno
+    text align: center // tako da na kraju sve bude lijepo u sredini
+    transition: all 0.5 ease-in //za sve elemente unutar tog diva pola sekunde tranzicija ease-in tipa
+
+.container > div:hover // na hover misa radi sljedece{}
+    opacity: 0.7; //zapravo transparentost, vidit ce se kroz njega ovisno koliko stavimo, nize znaci vise transparentno
+    transform: scale(0.98)
+
+.bg1
+    background url bg1
+    i onda moram maknuti background url iz gornjeg selectora
+
+.bg2
+    background url bg2
+    color #333
+
+.container > div:nth-of-type(n) - n je broj div-a na kojeg ciljam
+    grid-column: 1/3 - otkud do kud zelim da se rastegne taj div, ima od 1 do 5 iako su samo 4 elementa u jednom redu
+    i tako namjestiti dalje za ostale divove koji se trebaju rastegnuti na vise od jedne columne
+
+h2
+    font size 45px
+    font weight 300
+    margin 10px
+
+h2 span
+    font size 30px
+
+p
+    font size 20px
+

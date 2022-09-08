@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.App {
+  background-color: purple;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  text-align: center;
+}
+
+.timer {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+}
